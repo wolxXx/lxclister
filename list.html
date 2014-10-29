@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<meta lang="en">
+	<meta charset="utf-8">
+	<script src="containers.js"></script>
+	<script src="list.js"></script>
+	<style type="text/css">
+		body, html{
+			color: #0A246A;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+		}
+		table{
+			width: 100%;
+			border-spacing: 0;
+		}
+		td{
+			width: 70%;
+			overflow: auto;
+			vertical-align: top;
+			text-align: left;
+			border: solid 1px;
+			margin-top: 5px;
+			padding: 5px;
+		}
+		td:first-child{
+			width: 30%;
+			border-right: none;
+		}
+		td:last-child{
+			font-weight: bold;
+
+		}
+		a{
+			color: #005580;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		#overview, #lists{
+			float: left;
+			width: 30%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			height: 100%;
+		}
+
+		
+		#overview h1, #overview h2{
+			text-align: left;
+		}
+
+		#lists{
+			width: 60%;
+			margin-right: 5%;
+		}
+
+	</style>
+</head>
+<body>
+<div id="overview">
+	<a name="list"></a>
+	<h1>wolxXxops</h1>
+	<h2>simple lxc-lister</h2>
+	Name
+	<a class="sort" data-sort="sortByNameAsc">A</a>
+	<a class="sort" data-sort="sortByNameDesc">D</a><br />
+
+	IP
+	<a class="sort" data-sort="sortByIpAsc">A</a>
+	<a class="sort" data-sort="sortByIpDesc">D</a><br />
+
+	<input id="filter" placeholder="filter">
+
+	<ul id="containerLinks"></ul>
+</div>
+
+<div id="lists">
+
+</div>
+</body>
+</html>
