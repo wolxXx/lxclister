@@ -1,23 +1,16 @@
 var containers = [];
 
+//container: svn
 containers.push({
-	'name': 'foobar',
-	'ip': '10.0.3.100',
-	'mac': '00:11:22:33:44:55',
-	list1: [
-		1,2,3,4
-	],
-	list2: [
-		42, 1337, 3.14
-	]
+    name: 'foo',
+    ip: ' 10.0.3.100',
+    mac: ' 00:16:3e:d6:8c:9d',
+    arch: ' x86_64'
 });
-
+//container: svn
 containers.push({
-	'name': 'barfoo',
-	'ip': '10.0.3.101',
-	'mac': '11:22:33:44:55:66',
-	list1: [
-		1,2,3,4
-	],
-	description: "asdf"
+    name: 'bar',
+    ip: ' 10.0.3.101',
+    mac: ' 00:16:3e:d6:ff:c3',
+    arch: ' x86_64'
 });
